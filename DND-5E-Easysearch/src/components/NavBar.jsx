@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./NavBar.module.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -20,7 +20,119 @@ const NavBar = () => {
               className={(navData) => (navData.isActive ? styles.active : "")}
               to="/table/list"
             >
-              Members
+              Table
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/charactercreation"
+            >
+              Character
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/abilityscore"
+            >
+              Ability Score
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/races"
+            >
+              Races
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/classes"
+            >
+              Classes
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/backgrounds"
+            >
+              Backgrounds
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/alignments"
+            >
+              Alignments
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/skills"
+            >
+              Skills
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/feats"
+            >
+              Feats
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/spells"
+            >
+              Spells
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/equipments"
+            >
+              Equipments
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/conditions"
+            >
+              Conditions
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/damagetypes"
+            >
+              Damage Types
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/magicalequipments"
+            >
+              Magical Equipments
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/schoolofmagics"
+            >
+              School of Magic
             </NavLink>
           </li>
         </ul>
