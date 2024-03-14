@@ -1,9 +1,10 @@
 import React from "react";
+import Ability_Score from "../components/Ability_Score";
 
 const AbilityScores = () => {
   return (
     <div>
-      <h1>Ability Score</h1>
+      <Ability_Score></Ability_Score>
     </div>
   );
 };

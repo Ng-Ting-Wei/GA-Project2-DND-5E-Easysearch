@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Race from "./Race";
 import Subrace from "./Subrace";
-import RaceTraits from "./RaceTraits";
 
 const Display = () => {
   const [races, setRaces] = useState([]);
-  const [raceTraits, setRaceTraits] = useState([]);
   const [subraces, setSubraces] = useState([]);
   const [raceSelected, setRaceSelected] = useState([]);
   const [raceSelected1, setRaceSelected1] = useState([]);
