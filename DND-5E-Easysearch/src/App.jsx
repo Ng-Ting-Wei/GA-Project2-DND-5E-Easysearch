@@ -1,8 +1,6 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
-import Table from "./pages/Table";
-import Info from "./pages/Info";
 import NotFound from "./pages/NotFound";
 import NavBar from "./components/NavBar";
 import CharacterCreation from "./pages/CharacterCreation";
@@ -27,8 +25,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate replace to="/main" />}></Route>
         <Route path="main" element={<Main />}></Route>
-        <Route path="table/:id" element={<Table />}></Route>
-        <Route path="table/list" element={<Info />}></Route>
         <Route path="charactercreation" element={<CharacterCreation />}></Route>
         <Route path="abilityscore" element={<AbilityScore />}></Route>
         <Route path="races" element={<Races />}></Route>

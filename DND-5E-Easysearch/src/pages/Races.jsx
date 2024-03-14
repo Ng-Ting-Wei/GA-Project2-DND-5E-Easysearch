@@ -1,9 +1,10 @@
 import React from "react";
+import Display from "../components/Display";
 
 const Races = () => {
   return (
     <div>
-      <h1>Race List</h1>
+      <Display></Display>
     </div>
   );
 };
