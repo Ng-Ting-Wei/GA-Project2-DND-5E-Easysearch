@@ -4,9 +4,7 @@ import styles from "./Styles.module.css";
 const RaceTraits = (props) => {
   return (
     <div>
-      <div className={`${styles.raceTrait}`}>
-        <div>{props.nameRT}</div>
-      </div>
+      <button className={`${styles.race}`}>{props.nameRT}</button>
     </div>
   );
 };

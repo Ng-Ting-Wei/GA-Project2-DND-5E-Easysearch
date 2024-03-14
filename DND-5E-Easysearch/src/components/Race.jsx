@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Styles.module.css";
 
 const Race = (props) => {
   const handleRaceName = () => {
     // Call the updateRaceName function when the button is clicked
-    props.updateRaceName(props.nameR);
+    props.updateRaceName(props.nameR, props.indexR);
   };
 
   return (
