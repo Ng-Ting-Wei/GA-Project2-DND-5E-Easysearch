@@ -1,9 +1,10 @@
 import React from "react";
+import ClassList from "../components/ClassList";
 
 const Classes = () => {
   return (
     <div>
-      <h1>Class List</h1>
+      <ClassList></ClassList>
     </div>
   );
 };

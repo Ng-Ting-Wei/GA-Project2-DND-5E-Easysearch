@@ -145,7 +145,7 @@ const Display = () => {
                   <strong>Name:</strong> {race.name}
                 </li>
                 <li>
-                  <strong>speed:</strong> {race.speed}
+                  <strong>Speed:</strong> {race.speed}
                 </li>
                 <li>
                   <strong>Age:</strong> {race.age}
