@@ -66,7 +66,7 @@ const ClassList = () => {
   }, [className]);
 
   const renderTextOneClassDetails = (classes, section) => {
-    // return a message indicating no race details available
+    // return a message indicating no classes details available
     if (!classes || Object.keys(classes).length === 0) {
       return null;
     }
@@ -77,7 +77,7 @@ const ClassList = () => {
             <h1>Class</h1>
             <h2>Class Details:</h2>
             <ul>
-              {/* Render other specific properties of the race object here */}
+              {/* Render other specific properties of the classes object here */}
               <ul>
                 <li>
                   <strong>Name:</strong> {classes.name}

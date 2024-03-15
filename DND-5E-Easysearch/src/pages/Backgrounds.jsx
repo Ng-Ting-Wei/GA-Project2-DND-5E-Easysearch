@@ -1,9 +1,10 @@
 import React from "react";
+import BackgroundList from "../components/BackgroundList";
 
 const Backgrounds = () => {
   return (
     <div>
-      <h1>Background List</h1>
+      <BackgroundList></BackgroundList>
     </div>
   );
 };

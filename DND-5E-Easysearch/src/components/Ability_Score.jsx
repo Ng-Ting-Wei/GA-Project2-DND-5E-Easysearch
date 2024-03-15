@@ -67,7 +67,7 @@ const Ability_Score = () => {
   }, [abilityscoreSelectedIndex]);
 
   const renderTextAbilityscoreDetails = (ability, section) => {
-    // return a message indicating no race details available
+    // return a message indicating no ability details available
     if (!ability || Object.keys(ability).length === 0) {
       return null;
     }
@@ -77,7 +77,7 @@ const Ability_Score = () => {
           <div>
             <h2>Score Details:</h2>
             <ul>
-              {/* Render other specific properties of the race object here */}
+              {/* Render other specific properties of the ability object here */}
               <ul>
                 <li>
                   <strong>Name:</strong> {ability.full_name}
