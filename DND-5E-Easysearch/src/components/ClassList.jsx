@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Class from "./Class";
+import styles from "./Styles.module.css";
 
 const ClassList = () => {
   const [classes, setClasses] = useState([]);
@@ -73,7 +74,7 @@ const ClassList = () => {
     switch (section) {
       case "classDetails":
         return (
-          <div>
+          <div className={`${styles.classdisplay}`}>
             <h1>Class</h1>
             <h2>Class Details:</h2>
             <ul>
@@ -91,7 +92,7 @@ const ClassList = () => {
         );
       case "startingProficiencies":
         return (
-          <div>
+          <div className={`${styles.classdisplay}`}>
             <h2>Starting Proficiencies:</h2>
             <ul>
               {classes.proficiencies.map((proficiency) => (
@@ -104,7 +105,7 @@ const ClassList = () => {
         );
       case "proficiencyChoices":
         return (
-          <div>
+          <div className={`${styles.classdisplay}`}>
             <h2>Proficiency Choices:</h2>
             {classes.proficiency_choices.map((choice, index) => (
               <div key={index}>
@@ -122,7 +123,7 @@ const ClassList = () => {
         );
       case "spellcasting":
         return (
-          <div>
+          <div className={`${styles.classdisplay}`}>
             <h2>Spellcasting:</h2>
             <ul>
               {classes.spellcasting &&
@@ -136,7 +137,7 @@ const ClassList = () => {
         );
       case "startingEquipment":
         return (
-          <div>
+          <div className={`${styles.classdisplay}`}>
             <h2>Starting Equipment:</h2>
             <ul>
               {classes.starting_equipment.map((equipment) => (
@@ -150,7 +151,7 @@ const ClassList = () => {
         );
       case "startingEquipmentOptions":
         return (
-          <div>
+          <div className={`${styles.classdisplay}`}>
             <h2>Starting Equipment Options:</h2>
             {classes.starting_equipment_options.map((option, index) => (
               <div key={index}>
@@ -168,7 +169,7 @@ const ClassList = () => {
           classes.multi_classing.prerequisite_options?.from?.options || [];
 
         return (
-          <div>
+          <div className={`${styles.classdisplay}`}>
             <h2>Multi-classing:</h2>
             <ul>
               <li>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Abilityscore from "./Abilityscore";
+import styles from "./Styles.module.css";
 
 const Ability_Score = () => {
   const [abilityscore, setAbilityscore] = useState([]);
@@ -74,7 +75,7 @@ const Ability_Score = () => {
     switch (section) {
       case "abilityscoreDetails":
         return (
-          <div>
+          <div className={`${styles.abilityscoredisplay}`}>
             <h2>Score Details:</h2>
             <ul>
               {/* Render other specific properties of the ability object here */}
@@ -91,7 +92,7 @@ const Ability_Score = () => {
         );
       case "skillsDetails":
         return (
-          <div>
+          <div className={`${styles.abilityscoredisplay}`}>
             <h2>Skills:</h2>
             <ul>
               {ability.skills.map((item) => (

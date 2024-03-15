@@ -1,9 +1,10 @@
 import React from "react";
+import SkillList from "../components/SkillList";
 
 const Skills = () => {
   return (
     <div>
-      <h1>Skill List</h1>
+      <SkillList></SkillList>
     </div>
   );
 };

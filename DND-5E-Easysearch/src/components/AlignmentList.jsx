@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Alignments from "./Alignments";
+import styles from "./Styles.module.css";
 
 const AlignmentList = () => {
   const [alignments, setAlignments] = useState([]);
@@ -70,7 +71,7 @@ const AlignmentList = () => {
       return null;
     }
     return (
-      <div>
+      <div className={`${styles.alignmentdisplay}`}>
         <h1>Alignment Details:</h1>
         <ul>
           <li>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Race from "./Race";
 import Subrace from "./Subrace";
+import styles from "./Styles.module.css";
 
 const Display = () => {
   const [races, setRaces] = useState([]);
@@ -135,8 +136,8 @@ const Display = () => {
     switch (section) {
       case "raceDetails":
         return (
-          <div>
-            <h1>Subrace</h1>
+          <div className={`${styles.racedisplay}`}>
+            <h1>Race</h1>
             <h2>Race Details:</h2>
             <ul>
               {/* Render other specific properties of the race object here */}
@@ -168,7 +169,7 @@ const Display = () => {
         );
       case "abilityBonuses":
         return (
-          <div>
+          <div className={`${styles.racedisplay}`}>
             <h2>Ability Bonuses:</h2>
             <ul>
               {race.ability_bonuses.map((bonus) => (
@@ -181,7 +182,7 @@ const Display = () => {
         );
       case "startingProficiencies":
         return (
-          <div>
+          <div className={`${styles.racedisplay}`}>
             <h2>Starting Proficiencies:</h2>
             <ul>
               {race.starting_proficiencies.map((proficiency) => (
@@ -194,7 +195,7 @@ const Display = () => {
         );
       case "racialTraits":
         return (
-          <div>
+          <div className={`${styles.racedisplay}`}>
             <h2>Racial Traits:</h2>
             <ul>
               {race.traits.map((trait) => (
@@ -218,7 +219,8 @@ const Display = () => {
     switch (section) {
       case "raceDetails":
         return (
-          <div>
+          <div className={`${styles.subracedisplay}`}>
+            <h1>SubRace</h1>
             <h2>Race Details:</h2>
             <ul>
               {/* Render other specific properties of the race object here */}
@@ -235,7 +237,7 @@ const Display = () => {
         );
       case "abilityBonuses":
         return (
-          <div>
+          <div className={`${styles.subracedisplay}`}>
             <h2>Ability Bonuses:</h2>
             <ul>
               {race.ability_bonuses.map((bonus) => (
@@ -248,7 +250,7 @@ const Display = () => {
         );
       case "startingProficiencies":
         return (
-          <div>
+          <div className={`${styles.subracedisplay}`}>
             <h2>Starting Proficiencies:</h2>
             <ul>
               {race.starting_proficiencies.map((proficiency) => (
@@ -261,7 +263,7 @@ const Display = () => {
         );
       case "racialTraits":
         return (
-          <div>
+          <div className={`${styles.subracedisplay}`}>
             <h2>Racial Traits:</h2>
             <ul>
               {race.racial_traits.map((trait) => (

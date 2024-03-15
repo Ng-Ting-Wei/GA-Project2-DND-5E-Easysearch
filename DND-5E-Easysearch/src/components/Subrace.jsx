@@ -8,7 +8,7 @@ const Subrace = (props) => {
   };
   return (
     <div>
-      <button className={`${styles.race}`} onClick={handleRaceName}>
+      <button className={`${styles.subrace}`} onClick={handleRaceName}>
         {props.nameSR}
       </button>
     </div>
