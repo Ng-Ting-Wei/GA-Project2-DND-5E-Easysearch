@@ -111,8 +111,8 @@ const ClassList = () => {
                 <h3>{`Choose ${choice.choose} from:`}</h3>
                 <ul>
                   {choice.from.options.map((option) => (
-                    <li key={option.item.index}>
-                      <strong>{option.item.name}</strong>
+                    <li key={option.item?.index}>
+                      <strong>{option.item?.name}</strong>
                     </li>
                   ))}
                 </ul>
@@ -160,13 +160,20 @@ const ClassList = () => {
           </div>
         );
       case "multiClassing":
+        if (!classes.multi_classing) {
+          return null;
+        }
+        let prerequisites = classes.multi_classing.prerequisites || [];
+        let proficiencyOptions =
+          classes.multi_classing.prerequisite_options?.from?.options || [];
+
         return (
           <div>
             <h2>Multi-classing:</h2>
             <ul>
               <li>
                 <strong>Prerequisites:</strong>{" "}
-                {classes.multi_classing.prerequisites.map((prereq) => (
+                {prerequisites.map((prereq) => (
                   <span key={prereq.ability_score.index}>
                     {prereq.ability_score.name} (Minimum Score:{" "}
                     {prereq.minimum_score})
@@ -175,7 +182,7 @@ const ClassList = () => {
               </li>
               <li>
                 <strong>Proficiencies:</strong>{" "}
-                {classes.multi_classing.proficiencies.map((prof) => (
+                {proficiencyOptions.map((prof) => (
                   <span key={prof.index}>{prof.name}, </span>
                 ))}
               </li>

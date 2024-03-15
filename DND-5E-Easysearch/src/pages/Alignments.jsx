@@ -1,9 +1,10 @@
 import React from "react";
+import AlignmentList from "../components/AlignmentList";
 
 const Alignments = () => {
   return (
     <div>
-      <h1>Alignments</h1>
+      <AlignmentList></AlignmentList>
     </div>
   );
 };
