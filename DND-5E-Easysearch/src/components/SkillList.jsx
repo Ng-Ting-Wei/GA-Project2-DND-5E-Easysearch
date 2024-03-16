@@ -55,7 +55,7 @@ const SkillList = () => {
     };
   }, []);
 
-  // confirm got racename for get subracedata
+  // confirm got skillname for get subracedata
   useEffect(() => {
     const controller = new AbortController();
     if (skillName !== "") {
@@ -93,8 +93,7 @@ const SkillList = () => {
 
   return (
     <div>
-      <h1>Skill List</h1>
-      <div>Name</div>
+      <h1 className={`${styles.word}`}>Skill</h1>
       {skills.map((item) => {
         return (
           <Skills_Listing

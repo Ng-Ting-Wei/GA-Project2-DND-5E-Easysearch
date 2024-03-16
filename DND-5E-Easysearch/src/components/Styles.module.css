@@ -1,3 +1,9 @@
+.background {
+  background-color: rgb(51, 51, 51);
+}
+.word {
+  color: white;
+}
 .race {
   width: 150px;
   height: 45px;
@@ -7,6 +13,7 @@
   position: relative;
   bottom: 450px;
   left: 250px;
+  color: white;
 }
 .subrace {
   width: 150px;
@@ -20,6 +27,7 @@
   position: relative;
   bottom: 450px;
   left: 250px;
+  color: white;
 }
 .abilityscore {
   width: 150px;
@@ -30,6 +38,7 @@
   position: relative;
   bottom: 200px;
   left: 250px;
+  color: white;
 }
 .class {
   width: 150px;
@@ -40,6 +49,7 @@
   position: relative;
   bottom: 450px;
   left: 250px;
+  color: white;
 }
 .backgroundlist {
   width: 150px;
@@ -54,6 +64,7 @@
   position: relative;
   bottom: 350px;
   left: 300px;
+  color: white;
 }
 .skills {
   width: 150px;
@@ -64,6 +75,7 @@
   position: relative;
   bottom: 650px;
   left: 300px;
+  color: white;
 }
 .feats {
   width: 150px;
@@ -72,10 +84,10 @@
 .featsdisplay {
   width: 800px;
   position: relative;
-  bottom: 100px;
+  bottom: 80px;
   left: 250px;
+  color: white;
 }
-
 .spells {
   width: 180px;
   height: 35px;
@@ -85,4 +97,16 @@
   position: relative;
   bottom: 11200px;
   left: 220px;
+  color: white;
+}
+.conditions {
+  width: 180px;
+  height: 35px;
+}
+.conditiondisplay {
+  width: 800px;
+  position: relative;
+  bottom: 530px;
+  left: 220px;
+  color: white;
 }

@@ -56,7 +56,7 @@ const Ability_Score = () => {
     };
   }, []);
 
-  // confirm got racename for get subracedata
+  // confirm got abilityscoreSelectedIndex for get getSelectedAbilityscore
   useEffect(() => {
     const controller = new AbortController();
     if (abilityscoreSelectedIndex !== "") {
@@ -96,6 +96,7 @@ const Ability_Score = () => {
             <h2>Skills:</h2>
             <ul>
               {ability.skills.map((item) => (
+                // setting key
                 <li key={item.index}>
                   <strong>{item.name}</strong>
                 </li>
@@ -108,7 +109,7 @@ const Ability_Score = () => {
 
   return (
     <div>
-      <h1>Ability Score</h1>
+      <h1 className={`${styles.word}`}>Ability Score</h1>
       {abilityscore.map((item) => {
         return (
           <Abilityscore

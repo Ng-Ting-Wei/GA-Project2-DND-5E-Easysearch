@@ -55,7 +55,7 @@ const AlignmentList = () => {
     };
   }, []);
 
-  // confirm got racename for get subracedata
+  // confirm got alignmentName for get getSelectedAlignmentData
   useEffect(() => {
     const controller = new AbortController();
     if (alignmentName !== "") {
@@ -90,8 +90,7 @@ const AlignmentList = () => {
 
   return (
     <div>
-      <h1>Alignment List</h1>
-      <div>Name</div>
+      <h1 className={`${styles.word}`}>Alignment</h1>
       {alignments.map((item) => {
         return (
           <Alignments

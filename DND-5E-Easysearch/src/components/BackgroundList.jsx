@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Back_Ground from "./Back_Ground";
+import styles from "./Styles.module.css";
 
 const BackgroundList = () => {
   const [backgrounds, setBackgrounds] = useState([]);
@@ -54,7 +55,7 @@ const BackgroundList = () => {
     };
   }, []);
 
-  // confirm got racename for get subracedata
+  // confirm got backgroundName for get getSelectedBackgroundData
   useEffect(() => {
     const controller = new AbortController();
     if (backgroundName !== "") {
@@ -77,7 +78,6 @@ const BackgroundList = () => {
             <h1>Background</h1>
             <h2>Background Details:</h2>
             <ul>
-              {/* Render other specific properties of the background object here */}
               <li>
                 <strong>Name:</strong> {backgrounds.name}
               </li>
@@ -208,9 +208,8 @@ const BackgroundList = () => {
   };
 
   return (
-    <div>
-      <h1>Background List</h1>
-      <div>Name</div>
+    <div className={`${styles.word}`}>
+      <h1 className={`${styles.word}`}>Background</h1>
       {backgrounds.map((item) => {
         return (
           <Back_Ground

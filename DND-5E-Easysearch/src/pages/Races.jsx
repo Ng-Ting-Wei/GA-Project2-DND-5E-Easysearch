@@ -1,9 +1,10 @@
 import React from "react";
 import Display from "../components/Display";
+import styles from "../components/Styles.module.css";
 
 const Races = () => {
   return (
-    <div>
+    <div className={`${styles.background}`}>
       <Display></Display>
     </div>
   );

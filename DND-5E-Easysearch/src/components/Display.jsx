@@ -281,10 +281,7 @@ const Display = () => {
 
   return (
     <div>
-      <h1>Race</h1>
-      <div>
-        <div>Name</div>
-      </div>
+      <h1 className={`${styles.word}`}>Race</h1>
       {races.map((item) => {
         return (
           <Race

@@ -55,7 +55,7 @@ const SpellList = () => {
     };
   }, []);
 
-  // confirm got racename for get subracedata
+  // confirm got spellName for get getSelectedSpellsData
   useEffect(() => {
     const controller = new AbortController();
     if (spellName !== "") {
@@ -110,11 +110,13 @@ const SpellList = () => {
           <li>
             <strong>Attack Type:</strong> {spells.attack_type}
           </li>
+          {/* check whether spells.damage and spells.damage.damage_type exist */}
           {spells.damage && spells.damage.damage_type && (
             <li>
               <strong>Damage Type:</strong> {spells.damage.damage_type.name}
             </li>
           )}
+          {/* check whether spells.damage and spells.damage.damage_at_slot_level exist */}
           {spells.damage && spells.damage.damage_at_slot_level && (
             <li>
               <strong>Damage at Slot Level:</strong>
@@ -147,8 +149,7 @@ const SpellList = () => {
 
   return (
     <div>
-      <h1>Spell List</h1>
-      <div>Name</div>
+      <h1 className={`${styles.word}`}>Spell</h1>
       {spells.map((item) => {
         return (
           <Spell_List

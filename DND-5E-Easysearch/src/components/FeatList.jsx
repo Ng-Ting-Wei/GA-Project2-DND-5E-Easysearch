@@ -52,6 +52,7 @@ const FeatList = () => {
     };
   }, []);
 
+  // confirm got featName for get getSelectedFeatsData
   useEffect(() => {
     const controller = new AbortController();
     if (featName !== "") {
@@ -96,8 +97,7 @@ const FeatList = () => {
 
   return (
     <div>
-      <h1>Feat List</h1>
-      <div>Name</div>
+      <h1 className={`${styles.word}`}>Feat</h1>
       {feats.map((item) => {
         return (
           <Feats_List

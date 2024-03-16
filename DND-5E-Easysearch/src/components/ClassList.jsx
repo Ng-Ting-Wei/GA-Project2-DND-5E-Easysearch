@@ -55,7 +55,7 @@ const ClassList = () => {
     };
   }, []);
 
-  // confirm got racename for get subracedata
+  // confirm got className for get getSelectedClassData
   useEffect(() => {
     const controller = new AbortController();
     if (className !== "") {
@@ -197,8 +197,7 @@ const ClassList = () => {
 
   return (
     <div>
-      <h1>Class List</h1>
-      <div>Name</div>
+      <h1 className={`${styles.word}`}>Class</h1>
       {classes.map((item) => {
         return (
           <Class
