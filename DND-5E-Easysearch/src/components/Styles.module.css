@@ -65,3 +65,13 @@
   bottom: 650px;
   left: 300px;
 }
+.feats {
+  width: 150px;
+  height: 35px;
+}
+.featsdisplay {
+  width: 800px;
+  position: relative;
+  bottom: 100px;
+  left: 250px;
+}

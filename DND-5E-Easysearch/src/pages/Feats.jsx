@@ -1,9 +1,10 @@
 import React from "react";
+import FeatList from "../components/FeatList";
 
 const Feats = () => {
   return (
     <div>
-      <h1>Feat List</h1>
+      <FeatList></FeatList>
     </div>
   );
 };
