@@ -1,9 +1,10 @@
 import React from "react";
+import SpellList from "../components/SpellList";
 
 const Spells = () => {
   return (
     <div>
-      <h1>Spell List</h1>
+      <SpellList></SpellList>
     </div>
   );
 };

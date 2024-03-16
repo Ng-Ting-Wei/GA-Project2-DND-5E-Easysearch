@@ -75,3 +75,14 @@
   bottom: 100px;
   left: 250px;
 }
+
+.spells {
+  width: 180px;
+  height: 35px;
+}
+.spelldisplay {
+  width: 800px;
+  position: relative;
+  bottom: 11200px;
+  left: 220px;
+}
