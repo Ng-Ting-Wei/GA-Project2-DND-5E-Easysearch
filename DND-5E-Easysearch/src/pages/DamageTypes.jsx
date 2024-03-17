@@ -1,9 +1,11 @@
 import React from "react";
+import Damagetype from "../components/Damagetype";
+import styles from "../components/Styles.module.css";
 
 const DamageTypes = () => {
   return (
-    <div>
-      <h1>Damage Type</h1>
+    <div className={`${styles.background}`}>
+      <Damagetype></Damagetype>
     </div>
   );
 };

@@ -121,3 +121,14 @@
   left: 240px;
   color: white;
 }
+.damagetype {
+  width: 200px;
+  height: 35px;
+}
+.damagetypedisplay {
+  width: 800px;
+  position: relative;
+  bottom: 450px;
+  left: 240px;
+  color: white;
+}
