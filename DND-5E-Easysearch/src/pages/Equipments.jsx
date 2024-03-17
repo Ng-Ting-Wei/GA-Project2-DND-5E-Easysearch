@@ -1,9 +1,11 @@
 import React from "react";
+import EquipmentList from "../components/EquipmentList";
+import styles from "../components/Styles.module.css";
 
 const Equipments = () => {
   return (
-    <div>
-      <h1>Equipment List</h1>
+    <div className={`${styles.background}`}>
+      <EquipmentList></EquipmentList>
     </div>
   );
 };

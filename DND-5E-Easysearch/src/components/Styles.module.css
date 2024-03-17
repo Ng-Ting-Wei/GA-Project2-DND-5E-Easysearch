@@ -110,3 +110,14 @@
   left: 220px;
   color: white;
 }
+.equipments {
+  width: 220px;
+  height: 35px;
+}
+.equipmentdisplay {
+  width: 800px;
+  position: relative;
+  bottom: 8300px;
+  left: 240px;
+  color: white;
+}
