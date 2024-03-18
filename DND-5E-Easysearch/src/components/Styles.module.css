@@ -132,3 +132,14 @@
   left: 240px;
   color: white;
 }
+.magicalequipment {
+  width: 250px;
+  height: 35px;
+}
+.magicalequipmentdisplay {
+  width: 800px;
+  position: relative;
+  bottom: 12650px;
+  left: 280px;
+  color: white;
+}
