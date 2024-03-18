@@ -139,7 +139,9 @@ const ConditionList = () => {
       })}
 
       {renderTextOneSkillsDetails(conditionSelect)}
-      <button onClick={addToFavourites}>Save</button>
+      <button className={`${styles.savebutton}`} onClick={addToFavourites}>
+        Save Condition
+      </button>
     </div>
   );
 };
