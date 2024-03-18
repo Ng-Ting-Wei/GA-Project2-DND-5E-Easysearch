@@ -3,7 +3,6 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
 import NotFound from "./pages/NotFound";
 import NavBar from "./components/NavBar";
-import CharacterCreation from "./pages/CharacterCreation";
 import Backgrounds from "./pages/Backgrounds";
 import Classes from "./pages/Classes";
 import Races from "./pages/Races";
@@ -25,7 +24,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate replace to="/main" />}></Route>
         <Route path="main" element={<Main />}></Route>
-        <Route path="charactercreation" element={<CharacterCreation />}></Route>
         <Route path="abilityscore" element={<AbilityScore />}></Route>
         <Route path="races" element={<Races />}></Route>
         <Route path="classes" element={<Classes />}></Route>

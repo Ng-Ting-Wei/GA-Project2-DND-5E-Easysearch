@@ -18,14 +18,6 @@ const NavBar = () => {
           <li>
             <NavLink
               className={(navData) => (navData.isActive ? styles.active : "")}
-              to="/charactercreation"
-            >
-              Character
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={(navData) => (navData.isActive ? styles.active : "")}
               to="/abilityscore"
             >
               Ability Score

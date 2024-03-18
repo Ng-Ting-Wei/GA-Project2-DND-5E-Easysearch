@@ -5,9 +5,6 @@ const Main = () => {
   return (
     <div className="container">
       <h1>Main Page</h1>
-      <Link to="/charactercreation">
-        <button>Character</button>
-      </Link>
       <Link to="/abilityscore">
         <button>Ability Score</button>
       </Link>
