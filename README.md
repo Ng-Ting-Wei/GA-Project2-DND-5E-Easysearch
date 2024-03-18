@@ -5,7 +5,10 @@ The app allows you to navigate easily through the navbar to your specific page o
 
 # Screenshot
 
-<!-- ![Alt text](/Start.png) -->
+![Alt text](/Main_Screen.png)
+![Alt text](/Abilityscore_Screen.png)
+![Alt text](/Condition_Screen.png)
+![Alt text](/Equipment_Screen.png)
 
 # Technologies Used
 
