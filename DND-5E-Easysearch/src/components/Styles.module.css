@@ -181,3 +181,19 @@
   bottom: 500px;
   left: 300px;
 }
+.functionoddbutton {
+  width: 180px;
+  height: 85px;
+  position: relative;
+  top: 50px;
+  background-color: rgb(89, 89, 89);
+  color: white;
+}
+.functionevenbutton {
+  width: 180px;
+  height: 85px;
+  position: relative;
+  top: 50px;
+  background-color: grey;
+  color: white;
+}

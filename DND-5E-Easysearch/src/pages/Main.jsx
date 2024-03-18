@@ -7,46 +7,50 @@ const Main = () => {
     <div className="container">
       <h1>Main Page</h1>
       <Link to="/abilityscore">
-        <button>Ability Score</button>
+        <button className={`${styles.functionoddbutton}`}>Ability Score</button>
       </Link>
       <Link to="/races">
-        <button>Races</button>
+        <button className={`${styles.functionevenbutton}`}>Races</button>
       </Link>
       <Link to="/races">
-        <button>Races</button>
+        <button className={`${styles.functionoddbutton}`}>Races</button>
       </Link>
       <Link to="/classes">
-        <button>Classes</button>
+        <button className={`${styles.functionevenbutton}`}>Classes</button>
       </Link>
       <Link to="/backgrounds">
-        <button>Backgrounds</button>
+        <button className={`${styles.functionoddbutton}`}>Backgrounds</button>
       </Link>
       <Link to="/alignments">
-        <button>Alignments</button>
+        <button className={`${styles.functionevenbutton}`}>Alignments</button>
       </Link>
       <Link to="/skills">
-        <button>Skills</button>
+        <button className={`${styles.functionoddbutton}`}>Skills</button>
       </Link>
       <Link to="/feats">
-        <button>Feats</button>
+        <button className={`${styles.functionevenbutton}`}>Feats</button>
       </Link>
       <Link to="/spells">
-        <button>Spells</button>
+        <button className={`${styles.functionoddbutton}`}>Spells</button>
       </Link>
       <Link to="/equipments">
-        <button>Equipments</button>
+        <button className={`${styles.functionevenbutton}`}>Equipments</button>
       </Link>
       <Link to="/conditions">
-        <button>Conditions</button>
+        <button className={`${styles.functionoddbutton}`}>Conditions</button>
       </Link>
       <Link to="/damagetypes">
-        <button>Damage Type</button>
+        <button className={`${styles.functionevenbutton}`}>Damage Type</button>
       </Link>
       <Link to="/magicalequipments">
-        <button>Magical Equipment</button>
+        <button className={`${styles.functionoddbutton}`}>
+          Magical Equipment
+        </button>
       </Link>
       <Link to="/schoolofmagics">
-        <button>School of Magic</button>
+        <button className={`${styles.functionevenbutton}`}>
+          School of Magic
+        </button>
       </Link>
     </div>
   );
