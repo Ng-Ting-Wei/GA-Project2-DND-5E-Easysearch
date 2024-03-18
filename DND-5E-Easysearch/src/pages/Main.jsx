@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "../components/Styles.module.css";
 
 const Main = () => {
   return (
@@ -7,6 +8,9 @@ const Main = () => {
       <h1>Main Page</h1>
       <Link to="/abilityscore">
         <button>Ability Score</button>
+      </Link>
+      <Link to="/races">
+        <button>Races</button>
       </Link>
       <Link to="/races">
         <button>Races</button>
