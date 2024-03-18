@@ -94,17 +94,19 @@ const SkillList = () => {
   return (
     <div>
       <h1 className={`${styles.word}`}>Skill</h1>
-      {skills.map((item) => {
-        return (
-          <Skills_Listing
-            key={item.index}
-            index={item.index}
-            name={item.name}
-            url={item.url}
-            updateSkillName={updateSkillName}
-          ></Skills_Listing>
-        );
-      })}
+      <div className={`${styles.boxskills}`}>
+        {skills.map((item) => {
+          return (
+            <Skills_Listing
+              key={item.index}
+              index={item.index}
+              name={item.name}
+              url={item.url}
+              updateSkillName={updateSkillName}
+            ></Skills_Listing>
+          );
+        })}
+      </div>
 
       {renderTextOneSkillsDetails(skillSelect)}
     </div>

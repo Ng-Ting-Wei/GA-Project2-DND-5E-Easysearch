@@ -7,6 +7,41 @@ const ConditionList = () => {
   const [conditionSelect, setConditionSelect] = useState([]);
   const [conditionName, setConditionName] = useState("");
 
+  const addToFavourites = async () => {
+    try {
+      // If the movie does not exist, add it to the Airtable
+      const addResponse = await fetch(
+        "https://api.airtable.com/v0/appV5nP3FTKxmE2em/Table%201",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${
+              import.meta.env.VITE_SERVER_AIRTABLE_APIKEY
+            }`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            records: [
+              {
+                fields: {
+                  Name: conditionSelect.name,
+                  Type: "text",
+                  Field_ID: conditionSelect.index,
+                },
+              },
+            ],
+          }),
+        }
+      );
+      if (!addResponse.ok) {
+        throw new Error("Failed to add conditions");
+      }
+      window.alert("Conditions added");
+    } catch (error) {
+      console.error("There was an error!", error);
+    }
+  };
+
   const getConditionsData = async (signal) => {
     try {
       const res = await fetch("https://www.dnd5eapi.co/api/conditions/", {
@@ -104,6 +139,7 @@ const ConditionList = () => {
       })}
 
       {renderTextOneSkillsDetails(conditionSelect)}
+      <button onClick={addToFavourites}>Save</button>
     </div>
   );
 };

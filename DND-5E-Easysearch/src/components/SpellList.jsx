@@ -150,18 +150,19 @@ const SpellList = () => {
   return (
     <div>
       <h1 className={`${styles.word}`}>Spell</h1>
-      {spells.map((item) => {
-        return (
-          <Spell_List
-            key={item.index}
-            index={item.index}
-            name={item.name}
-            url={item.url}
-            updateSpellName={updateSpellName}
-          ></Spell_List>
-        );
-      })}
-
+      <div className={`${styles.boxspells}`}>
+        {spells.map((item) => {
+          return (
+            <Spell_List
+              key={item.index}
+              index={item.index}
+              name={item.name}
+              url={item.url}
+              updateSpellName={updateSpellName}
+            ></Spell_List>
+          );
+        })}
+      </div>
       {renderTextOneSpellsDetails(spellSelect)}
     </div>
   );

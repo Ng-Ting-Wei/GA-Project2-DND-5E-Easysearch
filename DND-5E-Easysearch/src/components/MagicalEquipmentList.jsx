@@ -108,17 +108,19 @@ const MagicalEquipmentList = () => {
   return (
     <div>
       <h1 className={`${styles.word}`}>Magical Equipment</h1>
-      {magicalEquipments.map((item) => {
-        return (
-          <Magical_Equipment
-            key={item.index}
-            index={item.index}
-            name={item.name}
-            url={item.url}
-            updateMagicalEquipmentName={updateMagicalEquipmentName}
-          ></Magical_Equipment>
-        );
-      })}
+      <div className={`${styles.box}`}>
+        {magicalEquipments.map((item) => {
+          return (
+            <Magical_Equipment
+              key={item.index}
+              index={item.index}
+              name={item.name}
+              url={item.url}
+              updateMagicalEquipmentName={updateMagicalEquipmentName}
+            ></Magical_Equipment>
+          );
+        })}
+      </div>
       {renderTextOneMagicalEquipmentsDetails(magicalEquipmentSelect)}
     </div>
   );

@@ -144,17 +144,21 @@ const EquipmentList = () => {
   return (
     <div>
       <h1 className={`${styles.word}`}>Equipment</h1>
-      {equipments.map((item) => {
-        return (
-          <Equipment_List
-            key={item.index}
-            index={item.index}
-            name={item.name}
-            url={item.url}
-            updateEquipmentName={updateEquipmentName}
-          ></Equipment_List>
-        );
-      })}
+      <div className={`${styles.boxequipments}`}>
+        {equipments.map((item) => {
+          return (
+            <div key={item.index}>
+              <Equipment_List
+                key={item.index}
+                index={item.index}
+                name={item.name}
+                url={item.url}
+                updateEquipmentName={updateEquipmentName}
+              ></Equipment_List>
+            </div>
+          );
+        })}
+      </div>
 
       {renderTextOneEquipmentsDetails(equipmentSelect)}
     </div>

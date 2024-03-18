@@ -1,9 +1,11 @@
 import React from "react";
+import styles from "../components/Styles.module.css";
+import SchoolofMagicList from "../components/SchoolofMagicList";
 
 const SchoolofMagics = () => {
   return (
-    <div>
-      <h1>School of Magic List</h1>
+    <div className={`${styles.background}`}>
+      <SchoolofMagicList></SchoolofMagicList>
     </div>
   );
 };

@@ -73,7 +73,7 @@
 .skillsdisplay {
   width: 800px;
   position: relative;
-  bottom: 650px;
+  bottom: 400px;
   left: 300px;
   color: white;
 }
@@ -95,7 +95,7 @@
 .spelldisplay {
   width: 800px;
   position: relative;
-  bottom: 11200px;
+  bottom: 400px;
   left: 220px;
   color: white;
 }
@@ -117,7 +117,7 @@
 .equipmentdisplay {
   width: 800px;
   position: relative;
-  bottom: 8300px;
+  bottom: 400px;
   left: 240px;
   color: white;
 }
@@ -139,7 +139,38 @@
 .magicalequipmentdisplay {
   width: 800px;
   position: relative;
-  bottom: 12650px;
+  bottom: 500px;
   left: 280px;
   color: white;
+}
+.schoolofmagic {
+  width: 200px;
+  height: 35px;
+}
+.schoolofmagicdisplay {
+  width: 800px;
+  position: relative;
+  bottom: 270px;
+  left: 240px;
+  color: white;
+}
+.box {
+  height: 500px;
+  width: 250px;
+  overflow: auto;
+}
+.boxskills {
+  height: 400px;
+  width: 150px;
+  overflow: auto;
+}
+.boxspells {
+  height: 400px;
+  width: 180px;
+  overflow: auto;
+}
+.boxequipments {
+  height: 400px;
+  width: 220px;
+  overflow: auto;
 }
